@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<title>Crypto Rates</title>
+</head>
+<body class="bg">
+    <script src="js/main.js" defer></script>    
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div>
+        <!-- Input Form -->
+        <div class="container content-justify-center">
+            <h1 style="color: rgb(220, 220, 230)">Crypto World</h1>
+            <form class="form-inline" name="inputForm" id="inputForm">
+                <div class="form-group mb-2">
+                    <label for="coinName" class="sr-only">Coin</label>
+                    <input type="text" name="season" class="form-control" placeholder="Coin Name" id="coinName">
+                </div>
+                
+                <button type="button" class="btn btn-primary mb-2" onclick="getcoin()" >Submit</button>
+            </form>
+
+        <!-- Dispaly of coin Name -->
+        <h3 id="coindisplay"></h3>
+        </div>        
+        
+
+        <!-- Results Table -->
+        <table class="container table table-hover table-dark">
+            <thead>
+            <tr>
+                <!-- <th scope="col">Day</th> -->
+                <th scope="col">Coin</th>
+                <th scope="col">Price</th>
+                <th scope="col">Currency</th>
+                
+            </tr>
+            </thead>
+            <tbody>
+            <tr id="tr1">
+                <th scope="row" id="coin"></th>
+                <th scope="row" id="price"></th>
+                <th scope="row" id="rates"></th>
+                
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+</body>
+</html>
